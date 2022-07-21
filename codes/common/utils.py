@@ -39,7 +39,7 @@ def plot_rewards_cn(rewards, ma_rewards, cfg, tag='train'):
     plt.plot(rewards)
     plt.plot(ma_rewards)
     plt.legend((u'奖励', u'滑动平均奖励',), loc="best", prop=chinese_font())
-    if cfg.save:
+    if cfg.save_fig:
         plt.savefig(cfg.result_path+f"{tag}_rewards_curve_cn")
     # plt.show()
 
